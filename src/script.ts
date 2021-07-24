@@ -1,3 +1,5 @@
+import * as $ from 'jquery';
+
 class SetModule {
     inp : string;
     constructor(input : string) {
@@ -5,6 +7,7 @@ class SetModule {
     }
     Debug() {
         console.log(this.inp+"..");
+        $('body').html(this.inp);
     }
 }
 
